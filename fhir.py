@@ -22,10 +22,10 @@ class AgentState(TypedDict, total=False):
     debug_attempts: Optional[int]
 
 # ---- Config ---- #
-NEO4J_URI = "bolt://localhost:7687"
-NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "aditya2004"
-QDRANT_COLLECTION = "medical_queries"
+NEO4J_URI = ""
+NEO4J_USER = ""
+NEO4J_PASSWORD = ""
+QDRANT_COLLECTION = ""
 OPENAI_KEY = ""  # Add your OpenAI API key here
 
 openai.api_key = OPENAI_KEY
