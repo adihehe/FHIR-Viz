@@ -1,8 +1,8 @@
 ﻿[
   {
-    "value.label": "Allergy",
-    "value.property": "code",
-    "value.values": [
+    "label": "Allergy",
+    "property": "CODE",
+    "distinctValues": [
       "609328004",
       "288328004",
       "84489001",
@@ -25,9 +25,9 @@
     ]
   },
   {
-    "value.label": "Allergy",
-    "value.property": "description",
-    "value.values": [
+    "label": "Allergy",
+    "property": "DESCRIPTION",
+    "distinctValues": [
       "Allergic disposition (finding)",
       "Bee venom (substance)",
       "Mold (organism)",
@@ -50,9 +50,57 @@
     ]
   },
   {
-    "value.label": "Allergy",
-    "value.property": "start",
-    "value.values": [
+    "label": "Allergy",
+    "property": "ENCOUNTER",
+    "distinctValues": [
+      "7f3404b7-fea4-0af0-be82-8272315f5d02",
+      "7d04a999-ab6e-40d9-b1c6-86094fb14e23",
+      "3c4996f6-a762-d616-c686-babe7cfc68d9",
+      "09277608-972e-e3b2-bc95-5d63f1675481",
+      "f9d1b32c-387b-d91f-e1aa-2ab666c04437",
+      "1e41354a-4796-0ff4-a6a3-7e7135854b3d",
+      "867c86ac-d3e4-fc22-6b5b-97c74d312499",
+      "5fc763ba-c837-7b15-251f-34768854f0c6",
+      "406a52af-b556-b7d3-f9fa-41ddcfde27fb",
+      "81bf0afb-1d8d-3323-75f6-ff4a509e99c9"
+    ]
+  },
+  {
+    "label": "Allergy",
+    "property": "Id",
+    "distinctValues": [
+      "06aaeced-b94d-4b2f-a9c0-d7866c705d82",
+      "0850ec17-4453-4a11-a76f-e0d7a5f79d40",
+      "09c7d67c-6580-4909-bcd4-eafd5f9d5d07",
+      "0e0527ac-6ede-42ce-8332-37cf628c5cda",
+      "0edb073e-8292-4928-811d-5d33b09b391a",
+      "10641470-95b4-4766-9945-b9c538b84304",
+      "194ec140-fedb-4334-bb09-2296b8b3fe05",
+      "19a5b707-5294-4294-b059-3214d577bd0e",
+      "19cff47a-9cb2-4e5a-8963-37c27ab8d778",
+      "1b6276ac-097e-4c79-a1d9-3f15c8fc0a5d"
+    ]
+  },
+  {
+    "label": "Allergy",
+    "property": "PATIENT",
+    "distinctValues": [
+      "64a0ba30-3b8a-2c31-851b-1102c0c7f9f7",
+      "3061298e-7645-88b5-5ec8-35026a6abaf1",
+      "21b06346-d3a6-7426-f4c4-88f2efb60bed",
+      "699ecb01-8d42-1de3-b43e-895f9b1834d6",
+      "e03512d2-c699-31b8-2772-2b5f99ffdaf0",
+      "491dd911-713e-05f2-b4a1-decaef39c3ae",
+      "0f513626-2d46-1178-db47-491008ec76a3",
+      "b4cad395-ed6d-6de4-aa9d-c5a9d6dda1e2",
+      "2da6a59b-d1be-b5a2-5e70-48c7db89a7c0",
+      "dbb59b5b-642e-c9b0-6787-12b69b4ff1f6"
+    ]
+  },
+  {
+    "label": "Allergy",
+    "property": "START",
+    "distinctValues": [
       "1994-05-14",
       "2004-10-06",
       "2019-08-05",
@@ -62,18 +110,13 @@
       "1964-05-22",
       "2012-08-31",
       "2006-03-12",
-      "1925-11-18",
-      "2014-09-28",
-      "2014-03-05",
-      "1987-10-12",
-      "1950-03-02",
-      "1949-04-27"
+      "1925-11-18"
     ]
   },
   {
-    "value.label": "CarePlan",
-    "value.property": "code",
-    "value.values": [
+    "label": "Careplan",
+    "property": "CODE",
+    "distinctValues": [
       "735985000",
       "718361005",
       "47387005",
@@ -103,13 +146,16 @@
       "735321000",
       "386522008",
       "386257007",
-      "133901003"
+      "133901003",
+      "736283006",
+      "735984001",
+      "736353004"
     ]
   },
   {
-    "value.label": "CarePlan",
-    "value.property": "description",
-    "value.values": [
+    "label": "Careplan",
+    "property": "DESCRIPTION",
+    "distinctValues": [
       "Diabetes self management plan (record artifact)",
       "Weight management program (regime/therapy)",
       "Head injury rehabilitation (regime/therapy)",
@@ -139,13 +185,64 @@
       "Surgical inpatient care plan (record artifact)",
       "Overactivity/inattention behavior management (regime/therapy)",
       "Dementia management (regime/therapy)",
-      "Burn care (regime/therapy)"
+      "Burn care (regime/therapy)",
+      "Chronic obstructive pulmonary disease clinical management plan (record artifact)",
+      "Heart failure self management plan (record artifact)",
+      "Inpatient care plan (record artifact)"
     ]
   },
   {
-    "value.label": "CarePlan",
-    "value.property": "reason_code",
-    "value.values": [
+    "label": "Careplan",
+    "property": "ENCOUNTER",
+    "distinctValues": [
+      "4a423bf9-cd55-bc73-9ae0-fffaeaf87de0",
+      "dfa86a2b-49cd-6ea0-fd02-047203ffc637",
+      "7336c92d-a3a7-c70e-cc5d-3346a9d30311",
+      "d07d0c71-6b5a-b719-ff4c-4d6132a685ee",
+      "3388cc3d-45c8-f52d-4185-fa5a593d1be3",
+      "99a5cfe8-3c44-bb8d-9477-4d7d87b03dcc",
+      "c14a771b-742a-64cd-0824-5462bb0af29e",
+      "3941433e-f51b-05c2-6f30-f17b11c5267e",
+      "8aa02bec-1350-372f-72ac-a179f5230655",
+      "7023a653-5100-59f4-0e5a-c173d7f45b80"
+    ]
+  },
+  {
+    "label": "Careplan",
+    "property": "Id",
+    "distinctValues": [
+      "00757ec8-eafd-c66f-006b-282b4a4b1338",
+      "0193c370-4fb8-5489-6b7c-6ec97fc87266",
+      "01b2afbf-0508-5794-3f16-6901d55e42c9",
+      "022e0639-2183-5388-c411-630bf69fd296",
+      "0258674d-e72c-ae39-babf-675c4a56ac3b",
+      "0326a5f8-5694-790b-e717-f82a1cefeb22",
+      "03ac5269-8af5-6000-4d5e-62a9bfca1ef2",
+      "0442711b-97fd-9f98-db86-bdda9487950c",
+      "0445c669-a988-708d-34d0-801644969f2e",
+      "05d5a9b9-85aa-b00f-54a9-01b0f2e5d931"
+    ]
+  },
+  {
+    "label": "Careplan",
+    "property": "PATIENT",
+    "distinctValues": [
+      "34a210f9-5ce1-ad63-790f-e404455e3e18",
+      "0fe22cec-1a19-99da-b67f-7ce364c4cf3e",
+      "b1f7b5a9-5cf5-6050-b23c-81027f53bdfd",
+      "1f2aa6c9-41bd-aa05-9da3-e557d8949816",
+      "80e114d1-013b-b546-7aba-17eb360dde04",
+      "bc5d2ab0-ef61-ff19-87cd-0c586ec0422a",
+      "2c489dce-38c7-4b0a-d7e2-5101383d93a1",
+      "bddb802b-a1f0-15c6-0d69-3b7511a9fd5f",
+      "95559bb7-a9a3-104c-a710-e9a1e22b312e",
+      "446d8007-ae35-2994-77cd-c44d9f4286a6"
+    ]
+  },
+  {
+    "label": "Careplan",
+    "property": "REASONCODE",
+    "distinctValues": [
       "714628002",
       "110030002",
       "233678006",
@@ -175,13 +272,23 @@
       "444448004",
       "73430006",
       "1231000119100",
-      "239873007"
+      "239873007",
+      "263172003",
+      "363406005",
+      "283385000",
+      "93761005",
+      "62106007",
+      "26929004",
+      "403190006",
+      "87433001",
+      "230265002",
+      "88805009"
     ]
   },
   {
-    "value.label": "CarePlan",
-    "value.property": "reason_description",
-    "value.values": [
+    "label": "Careplan",
+    "property": "REASONDESCRIPTION",
+    "distinctValues": [
       "Prediabetes (finding)",
       "Concussion injury of brain (disorder)",
       "Childhood asthma (disorder)",
@@ -211,13 +318,23 @@
       "Injury of medial collateral ligament of knee (disorder)",
       "Sleep apnea (disorder)",
       "History of aortic valve replacement (situation)",
-      "Osteoarthritis of knee (disorder)"
+      "Osteoarthritis of knee (disorder)",
+      "Fracture of mandible (disorder)",
+      "Malignant neoplasm of colon (disorder)",
+      "Laceration of thigh (disorder)",
+      "Primary malignant neoplasm of colon (disorder)",
+      "Concussion with no loss of consciousness (disorder)",
+      "Alzheimer's disease (disorder)",
+      "Epidermal burn of skin (disorder)",
+      "Pulmonary emphysema (disorder)",
+      "Familial Alzheimer's disease of early onset (disorder)",
+      "Chronic congestive heart failure (disorder)"
     ]
   },
   {
-    "value.label": "CarePlan",
-    "value.property": "start",
-    "value.values": [
+    "label": "Careplan",
+    "property": "START",
+    "distinctValues": [
       "2019-01-17",
       "1998-08-16",
       "2017-08-29",
@@ -227,18 +344,13 @@
       "2014-05-11",
       "2017-04-09",
       "2021-03-21",
-      "2024-05-19",
-      "1996-01-24",
-      "2014-03-31",
-      "2016-08-02",
-      "2020-07-07",
-      "2021-12-28"
+      "2024-05-19"
     ]
   },
   {
-    "value.label": "CarePlan",
-    "value.property": "stop",
-    "value.values": [
+    "label": "Careplan",
+    "property": "STOP",
+    "distinctValues": [
       "2017-10-22",
       "2022-05-29",
       "2024-03-24",
@@ -248,18 +360,13 @@
       "2017-03-14",
       "2021-02-09",
       "2022-09-06",
-      "2017-12-20",
-      "2019-09-11",
-      "2022-04-06",
-      "2025-04-07",
-      "2018-02-11",
-      "2023-03-18"
+      "2017-12-20"
     ]
   },
   {
-    "value.label": "Condition",
-    "value.property": "code",
-    "value.values": [
+    "label": "Condition",
+    "property": "CODE",
+    "distinctValues": [
       "224299000",
       "160903007",
       "314529007",
@@ -289,13 +396,23 @@
       "43878008",
       "254837009",
       "361055000",
-      "82423001"
+      "82423001",
+      "278860009",
+      "307426000",
+      "398254007",
+      "198992004",
+      "266948004",
+      "10509002",
+      "73438004",
+      "105531004",
+      "224295006",
+      "109570002"
     ]
   },
   {
-    "value.label": "Condition",
-    "value.property": "description",
-    "value.values": [
+    "label": "Condition",
+    "property": "DESCRIPTION",
+    "distinctValues": [
       "Received higher education (finding)",
       "Full-time employment (finding)",
       "Medication review due (situation)",
@@ -325,13 +442,71 @@
       "Streptococcal sore throat (disorder)",
       "Malignant neoplasm of breast (disorder)",
       "Misuses drugs (finding)",
-      "Chronic pain (finding)"
+      "Chronic pain (finding)",
+      "Chronic low back pain (finding)",
+      "Acute infective cystitis (disorder)",
+      "Pre-eclampsia (disorder)",
+      "Eclampsia in pregnancy (disorder)",
+      "Has a criminal record (finding)",
+      "Acute bronchitis (disorder)",
+      "Unemployed (finding)",
+      "Housing unsatisfactory (finding)",
+      "Only received primary school education (finding)",
+      "Primary dental caries (disorder)"
     ]
   },
   {
-    "value.label": "Condition",
-    "value.property": "start",
-    "value.values": [
+    "label": "Condition",
+    "property": "ENCOUNTER",
+    "distinctValues": [
+      "4a49987e-7f62-22a0-4cf4-34db4b838d73",
+      "f7410e81-0416-e57c-07f0-24b9dee39d48",
+      "5f4177ca-c592-bc22-116c-27de8b3b1cb5",
+      "8226dce4-9bc8-cb09-68d6-0fb376cbf349",
+      "4a423bf9-cd55-bc73-9ae0-fffaeaf87de0",
+      "b415a053-d650-aa8c-fd74-644db2d69eec",
+      "c7bbb747-aab0-e272-22dc-e0dfed03e1e5",
+      "37121a78-c873-533b-e631-cb9a1b8f1841",
+      "5a84c398-7dac-64f6-d09c-73eddcde1df4",
+      "46610977-7643-ad54-668f-67c0a3deece9"
+    ]
+  },
+  {
+    "label": "Condition",
+    "property": "Id",
+    "distinctValues": [
+      "000a499d-c58a-485e-92e1-349577ee814d",
+      "000ccb6c-43ca-4a7b-bd73-f99ffd27c83e",
+      "0010387e-9c8c-43c5-833b-79d8196171cc",
+      "001222e8-5f7d-48e3-a0a8-c67632e89ece",
+      "001a539d-f8bc-4c45-a274-e3a6a8a22c3f",
+      "0024c245-b136-4911-9a21-c0741165b37f",
+      "004bf5ac-9432-4268-bc02-832cdd689748",
+      "0050a5b0-3a8d-4cd7-8c35-496936102b27",
+      "006eaec3-4758-4e40-afee-d32f5f72801a",
+      "0070ec8c-53b0-4cc7-bfdc-2bf88994cb0f"
+    ]
+  },
+  {
+    "label": "Condition",
+    "property": "PATIENT",
+    "distinctValues": [
+      "34a210f9-5ce1-ad63-790f-e404455e3e18",
+      "0fe22cec-1a19-99da-b67f-7ce364c4cf3e",
+      "b1f7b5a9-5cf5-6050-b23c-81027f53bdfd",
+      "1f2aa6c9-41bd-aa05-9da3-e557d8949816",
+      "80e114d1-013b-b546-7aba-17eb360dde04",
+      "bc5d2ab0-ef61-ff19-87cd-0c586ec0422a",
+      "2c489dce-38c7-4b0a-d7e2-5101383d93a1",
+      "bddb802b-a1f0-15c6-0d69-3b7511a9fd5f",
+      "95559bb7-a9a3-104c-a710-e9a1e22b312e",
+      "446d8007-ae35-2994-77cd-c44d9f4286a6"
+    ]
+  },
+  {
+    "label": "Condition",
+    "property": "START",
+    "distinctValues": [
       "2012-01-05",
       "2013-01-10",
       "2016-01-14",
@@ -341,18 +516,13 @@
       "2022-02-03",
       "2025-01-23",
       "1998-01-11",
-      "2005-09-25",
-      "2006-10-01",
-      "2009-10-04",
-      "2012-10-07",
-      "2015-10-11",
-      "2016-11-27"
+      "2005-09-25"
     ]
   },
   {
-    "value.label": "Condition",
-    "value.property": "stop",
-    "value.values": [
+    "label": "Condition",
+    "property": "STOP",
+    "distinctValues": [
       "2019-01-17",
       "2017-09-17",
       "2022-01-20",
@@ -362,18 +532,13 @@
       "2016-12-21",
       "2017-07-24",
       "2017-10-22",
-      "2022-05-29",
-      "2021-11-07",
-      "2024-03-24",
-      "2015-12-06",
-      "2017-05-14",
-      "2016-01-09"
+      "2022-05-29"
     ]
   },
   {
-    "value.label": "Encounter",
-    "value.property": "code",
-    "value.values": [
+    "label": "Encounter",
+    "property": "CODE",
+    "distinctValues": [
       "162673000",
       "185345009",
       "185347001",
@@ -403,13 +568,23 @@
       "305408004",
       "308646001",
       "56876005",
-      "453131000124105"
+      "453131000124105",
+      "439708006",
+      "1505002",
+      "305336008",
+      "305351004",
+      "79094001",
+      "183495009",
+      "185389009",
+      "397821002",
+      "305342007",
+      "223484005"
     ]
   },
   {
-    "value.label": "Encounter",
-    "value.property": "description",
-    "value.values": [
+    "label": "Encounter",
+    "property": "DESCRIPTION",
+    "distinctValues": [
       "General examination of patient (procedure)",
       "Encounter for symptom (procedure)",
       "Encounter for problem (procedure)",
@@ -439,13 +614,55 @@
       "Admission to surgical department (procedure)",
       "Death Certification",
       "Drug rehabilitation and detoxification (regime/therapy)",
-      "Videotelephony encounter (procedure)"
+      "Videotelephony encounter (procedure)",
+      "Home visit (procedure)",
+      "Hospital admission for isolation (procedure)",
+      "Admission to hospice (procedure)",
+      "Admission to intensive care unit (procedure)",
+      "Initial psychiatric interview with mental status and evaluation (procedure)",
+      "Non-urgent orthopedic admission (procedure)",
+      "Follow-up visit (procedure)",
+      "Patient transfer to intensive care unit (procedure)",
+      "Admission to ward (procedure)",
+      "Discussion about treatment (procedure)"
     ]
   },
   {
-    "value.label": "Encounter",
-    "value.property": "reason_code",
-    "value.values": [
+    "label": "Encounter",
+    "property": "Id",
+    "distinctValues": [
+      "0001a780-69d7-0b97-ff60-acdad653f301",
+      "0012c9f9-d8cb-68f7-6f7a-d7e79707b36c",
+      "0025e21c-0578-1d49-8afe-15aeeaeb88a3",
+      "003215a0-6440-6047-9376-57c776c097b6",
+      "0034fcb1-0f9c-06f1-98c1-7d4f9fc67072",
+      "003cc35f-544f-08af-83e8-36645c63b9c1",
+      "004f3786-2cdd-8ad1-6b95-89eb11b7a11a",
+      "005a4ec0-277e-8ae3-b86b-f86aab25daee",
+      "0073bc3d-8b94-2274-663b-bbf8b724a601",
+      "007a032a-895d-a1db-e2c4-c3f57c4f0831"
+    ]
+  },
+  {
+    "label": "Encounter",
+    "property": "PATIENT",
+    "distinctValues": [
+      "34a210f9-5ce1-ad63-790f-e404455e3e18",
+      "0fe22cec-1a19-99da-b67f-7ce364c4cf3e",
+      "b1f7b5a9-5cf5-6050-b23c-81027f53bdfd",
+      "1f2aa6c9-41bd-aa05-9da3-e557d8949816",
+      "80e114d1-013b-b546-7aba-17eb360dde04",
+      "bc5d2ab0-ef61-ff19-87cd-0c586ec0422a",
+      "2c489dce-38c7-4b0a-d7e2-5101383d93a1",
+      "bddb802b-a1f0-15c6-0d69-3b7511a9fd5f",
+      "95559bb7-a9a3-104c-a710-e9a1e22b312e",
+      "446d8007-ae35-2994-77cd-c44d9f4286a6"
+    ]
+  },
+  {
+    "label": "Encounter",
+    "property": "REASONCODE",
+    "distinctValues": [
       "444814009",
       "271737000",
       "103697008",
@@ -475,13 +692,23 @@
       "22298006",
       "401314000",
       "24079001",
-      "232353008"
+      "232353008",
+      "102263004",
+      "312608009",
+      "65966004",
+      "37320007",
+      "91302008",
+      "183996000",
+      "239872002",
+      "35999006",
+      "59621000",
+      "201834006"
     ]
   },
   {
-    "value.label": "Encounter",
-    "value.property": "reason_description",
-    "value.values": [
+    "label": "Encounter",
+    "property": "REASONDESCRIPTION",
+    "distinctValues": [
       "Viral sinusitis (disorder)",
       "Anemia (disorder)",
       "Patient referral for dental care (procedure)",
@@ -511,13 +738,23 @@
       "Myocardial infarction (disorder)",
       "Acute non-ST segment elevation myocardial infarction (disorder)",
       "Atopic dermatitis (disorder)",
-      "Perennial allergic rhinitis with seasonal variation (disorder)"
+      "Perennial allergic rhinitis with seasonal variation (disorder)",
+      "Eggs (edible) (substance)",
+      "Laceration - injury (disorder)",
+      "Fracture of forearm (disorder)",
+      "Loss of teeth (disorder)",
+      "Sepsis (disorder)",
+      "Sterilization requested (situation)",
+      "Osteoarthritis of hip (disorder)",
+      "Blighted ovum (disorder)",
+      "Essential hypertension (disorder)",
+      "Localized  primary osteoarthritis of the hand (disorder)"
     ]
   },
   {
-    "value.label": "Encounter",
-    "value.property": "start",
-    "value.values": [
+    "label": "Encounter",
+    "property": "START",
+    "distinctValues": [
       "2012-01-05T12:24:26Z",
       "2013-01-10T12:24:26Z",
       "2016-01-14T12:24:26Z",
@@ -527,18 +764,13 @@
       "2019-02-07T12:24:26Z",
       "2021-06-10T12:24:26Z",
       "2021-07-01T12:24:26Z",
-      "2022-01-20T12:24:26Z",
-      "2022-02-03T12:24:26Z",
-      "2025-01-23T12:24:26Z",
-      "1998-01-11T15:19:57Z",
-      "1998-08-16T09:19:57Z",
-      "2005-09-25T09:19:57Z"
+      "2022-01-20T12:24:26Z"
     ]
   },
   {
-    "value.label": "Encounter",
-    "value.property": "stop",
-    "value.values": [
+    "label": "Encounter",
+    "property": "STOP",
+    "distinctValues": [
       "2012-01-05T13:06:24Z",
       "2013-01-10T12:59:24Z",
       "2016-01-14T12:59:03Z",
@@ -548,18 +780,13 @@
       "2019-02-07T15:12:05Z",
       "2021-06-10T12:39:26Z",
       "2021-07-01T12:39:26Z",
-      "2022-01-20T13:01:00Z",
-      "2022-02-03T17:23:50Z",
-      "2025-01-23T13:14:17Z",
-      "1998-01-11T15:34:57Z",
-      "1998-08-16T09:34:57Z",
-      "2005-09-25T10:10:51Z"
+      "2022-01-20T13:01:00Z"
     ]
   },
   {
-    "value.label": "Immunization",
-    "value.property": "code",
-    "value.values": [
+    "label": "Immunization",
+    "property": "CODE",
+    "distinctValues": [
       "140",
       "113",
       "43",
@@ -584,9 +811,9 @@
     ]
   },
   {
-    "value.label": "Immunization",
-    "value.property": "date",
-    "value.values": [
+    "label": "Immunization",
+    "property": "DATE",
+    "distinctValues": [
       "2016-01-14T12:24:26Z",
       "2019-01-17T12:24:26Z",
       "2021-06-10T12:24:26Z",
@@ -596,33 +823,13 @@
       "2015-10-11T09:19:57Z",
       "2018-10-14T09:19:57Z",
       "2021-03-07T09:19:57Z",
-      "2021-03-28T09:19:57Z",
-      "2021-10-17T09:19:57Z",
-      "2024-10-20T09:19:57Z",
-      "2015-12-06T16:04:02Z",
-      "2017-05-14T16:04:02Z",
-      "2020-05-17T16:04:02Z",
-      "2021-07-25T16:04:02Z",
-      "2021-08-22T16:04:02Z",
-      "2023-05-21T16:04:02Z",
-      "2016-04-26T13:45:44Z",
-      "2017-05-02T13:45:44Z",
-      "2018-05-08T13:45:44Z",
-      "2019-05-14T13:45:44Z",
-      "2020-05-19T13:45:44Z",
-      "2021-02-09T13:45:44Z",
-      "2021-03-09T13:45:44Z",
-      "2021-05-25T13:45:44Z",
-      "2022-05-17T13:45:44Z",
-      "2023-06-06T13:45:44Z",
-      "2024-06-11T13:45:44Z",
-      "2015-12-09T08:07:55Z"
+      "2021-03-28T09:19:57Z"
     ]
   },
   {
-    "value.label": "Immunization",
-    "value.property": "description",
-    "value.values": [
+    "label": "Immunization",
+    "property": "DESCRIPTION",
+    "distinctValues": [
       "Influenza  seasonal  injectable  preservative free",
       "Td (adult)  5 Lf tetanus toxoid  preservative free  adsorbed",
       "Hep B  adult",
@@ -647,9 +854,57 @@
     ]
   },
   {
-    "value.label": "Medication",
-    "value.property": "code",
-    "value.values": [
+    "label": "Immunization",
+    "property": "ENCOUNTER",
+    "distinctValues": [
+      "5f4177ca-c592-bc22-116c-27de8b3b1cb5",
+      "4a423bf9-cd55-bc73-9ae0-fffaeaf87de0",
+      "2a6d5db7-cf7c-2d61-7fc1-524cfe9fb870",
+      "d3bb320d-065a-f8ef-0504-e5d209f519dc",
+      "b415a053-d650-aa8c-fd74-644db2d69eec",
+      "37121a78-c873-533b-e631-cb9a1b8f1841",
+      "22b8f583-2670-3a12-2084-1e2463cfcd2d",
+      "c511ac85-cd5b-bf19-7c8b-95fd27d355eb",
+      "92345cb4-d15e-f362-fc63-97e795f6f2af",
+      "ed598fde-2f9e-d135-9e64-7f05cef1f870"
+    ]
+  },
+  {
+    "label": "Immunization",
+    "property": "Id",
+    "distinctValues": [
+      "000de4fd-17c4-40f1-a0d0-a60b349c8362",
+      "0038e6c4-eaa7-4b52-9239-768347731219",
+      "00477971-fedb-4661-95c6-f70615161940",
+      "00ba9575-e74a-4b67-bd5c-99fad314406c",
+      "0103904b-d5ad-4ed8-aa9e-ee211d80cfc2",
+      "010bc3f9-ddce-421b-91be-dbbc59dc16a9",
+      "0116db5a-4f65-466b-b5b2-722275e73b73",
+      "013e767d-fb1a-42d5-9788-df46a081c76c",
+      "017a55c0-c477-44e1-80d6-94e54693a8f8",
+      "019f767d-b6df-4058-a70e-7942744f651c"
+    ]
+  },
+  {
+    "label": "Immunization",
+    "property": "PATIENT",
+    "distinctValues": [
+      "34a210f9-5ce1-ad63-790f-e404455e3e18",
+      "0fe22cec-1a19-99da-b67f-7ce364c4cf3e",
+      "b1f7b5a9-5cf5-6050-b23c-81027f53bdfd",
+      "1f2aa6c9-41bd-aa05-9da3-e557d8949816",
+      "80e114d1-013b-b546-7aba-17eb360dde04",
+      "bc5d2ab0-ef61-ff19-87cd-0c586ec0422a",
+      "2c489dce-38c7-4b0a-d7e2-5101383d93a1",
+      "bddb802b-a1f0-15c6-0d69-3b7511a9fd5f",
+      "95559bb7-a9a3-104c-a710-e9a1e22b312e",
+      "446d8007-ae35-2994-77cd-c44d9f4286a6"
+    ]
+  },
+  {
+    "label": "Medication",
+    "property": "CODE",
+    "distinctValues": [
       "807283",
       "757594",
       "310325",
@@ -679,13 +934,23 @@
       "751905",
       "314231",
       "860975",
-      "748856"
+      "748856",
+      "1856546",
+      "617296",
+      "198335",
+      "834061",
+      "106258",
+      "311372",
+      "1870230",
+      "1049504",
+      "1860491",
+      "212033"
     ]
   },
   {
-    "value.label": "Medication",
-    "value.property": "description",
-    "value.values": [
+    "label": "Medication",
+    "property": "DESCRIPTION",
+    "distinctValues": [
       "Mirena 52 MG Intrauterine System",
       "Jolivette 28 Day Pack",
       "ferrous sulfate 325 MG Oral Tablet",
@@ -715,13 +980,71 @@
       "Trinessa 28 Day Pack",
       "1 ML medroxyPROGESTERone acetate 150 MG/ML Injection",
       "Simvastatin 10 MG Oral Tablet",
-      "24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet"
+      "24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet",
+      "Yaz 28 Day Pack",
+      "Kyleena 19.5 MG Intrauterine System",
+      "amoxicillin 500 MG / clavulanate 125 MG Oral Tablet",
+      "sulfamethoxazole 800 MG / trimethoprim 160 MG Oral Tablet",
+      "Penicillin V Potassium 250 MG Oral Tablet",
+      "Hydrocortisone 10 MG/ML Topical Cream",
+      "Loratadine 10 MG Oral Tablet",
+      "NDA020800 0.3 ML Epinephrine 1 MG/ML Auto-Injector",
+      "Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin]",
+      "12 HR Hydrocodone Bitartrate 10 MG Extended Release Oral Capsule"
     ]
   },
   {
-    "value.label": "Medication",
-    "value.property": "reason_code",
-    "value.values": [
+    "label": "Medication",
+    "property": "ENCOUNTER",
+    "distinctValues": [
+      "23c14b40-6a1e-a422-e0a2-751e44fb4ca7",
+      "70d9e778-4ec3-edc8-423e-c60189b62884",
+      "4aa5f00f-829c-fbb8-2b9e-6139e49e6151",
+      "3b81c72e-3c1b-6259-21f5-fa49a4eaeb7f",
+      "0ffa9f68-d03e-7795-6aba-30a28d7b2378",
+      "b0bceda8-f321-dfbc-b38d-3eeae8bf8360",
+      "b402fc7e-e7d1-237e-ed8e-8e1610ea5db6",
+      "19bc37ee-899b-fbf8-b9d5-316fde8cd2eb",
+      "31168e29-f803-e481-ac69-1c51aba3c46e",
+      "4989e7a9-903a-baae-3a5a-c90cc1d3174a"
+    ]
+  },
+  {
+    "label": "Medication",
+    "property": "Id",
+    "distinctValues": [
+      "0001aa5d-59c7-41f9-bb26-64187896fc60",
+      "00047fcb-2c15-4ef0-bac8-6b662c2e3c6e",
+      "00053231-740e-47d2-95f3-fd6a75abaabd",
+      "00143111-e946-444a-8758-99dc926e9140",
+      "0026282a-7274-4be8-b99f-672f5490daf1",
+      "002dacd6-4dc4-404c-a6e9-2166600e5115",
+      "0036fb12-bd44-4316-bdcd-33098ddff3ea",
+      "003a8736-af06-497c-80d0-4cda6c14bdce",
+      "005df1c5-e4ac-4108-9e27-cdd66f113f44",
+      "006146a6-2fc4-405a-bd13-063fe6dc3b85"
+    ]
+  },
+  {
+    "label": "Medication",
+    "property": "PATIENT",
+    "distinctValues": [
+      "0fe22cec-1a19-99da-b67f-7ce364c4cf3e",
+      "b1f7b5a9-5cf5-6050-b23c-81027f53bdfd",
+      "1f2aa6c9-41bd-aa05-9da3-e557d8949816",
+      "80e114d1-013b-b546-7aba-17eb360dde04",
+      "bc5d2ab0-ef61-ff19-87cd-0c586ec0422a",
+      "2c489dce-38c7-4b0a-d7e2-5101383d93a1",
+      "bddb802b-a1f0-15c6-0d69-3b7511a9fd5f",
+      "95559bb7-a9a3-104c-a710-e9a1e22b312e",
+      "446d8007-ae35-2994-77cd-c44d9f4286a6",
+      "edf2d260-9a0b-7668-ed7b-259b11812e09"
+    ]
+  },
+  {
+    "label": "Medication",
+    "property": "REASONCODE",
+    "distinctValues": [
       "66383009",
       "43878008",
       "444814009",
@@ -751,13 +1074,23 @@
       "239873007",
       "363406005",
       "254837009",
-      "69896004"
+      "69896004",
+      "26929004",
+      "36971009",
+      "389087006",
+      "132281000119108",
+      "87433001",
+      "230265002",
+      "88805009",
+      "195967001",
+      "271737000",
+      "698306007"
     ]
   },
   {
-    "value.label": "Medication",
-    "value.property": "reason_description",
-    "value.values": [
+    "label": "Medication",
+    "property": "REASONDESCRIPTION",
+    "distinctValues": [
       "Gingivitis (disorder)",
       "Streptococcal sore throat (disorder)",
       "Viral sinusitis (disorder)",
@@ -787,13 +1120,23 @@
       "Osteoarthritis of knee (disorder)",
       "Malignant neoplasm of colon (disorder)",
       "Malignant neoplasm of breast (disorder)",
-      "Rheumatoid arthritis (disorder)"
+      "Rheumatoid arthritis (disorder)",
+      "Alzheimer's disease (disorder)",
+      "Sinusitis (disorder)",
+      "Hypoxemia (disorder)",
+      "Acute deep venous thrombosis (disorder)",
+      "Pulmonary emphysema (disorder)",
+      "Familial Alzheimer's disease of early onset (disorder)",
+      "Chronic congestive heart failure (disorder)",
+      "Asthma (disorder)",
+      "Anemia (disorder)",
+      "Awaiting transplantation of kidney (situation)"
     ]
   },
   {
-    "value.label": "Medication",
-    "value.property": "start",
-    "value.values": [
+    "label": "Medication",
+    "property": "START",
+    "distinctValues": [
       "2014-08-27T07:10:43Z",
       "2019-08-05T21:57:17Z",
       "2020-07-30T21:57:17Z",
@@ -803,18 +1146,13 @@
       "2021-05-13T22:04:02Z",
       "2022-09-14T09:04:02Z",
       "2025-01-01T19:04:02Z",
-      "2025-02-09T16:04:02Z",
-      "2015-03-06T13:45:44Z",
-      "2015-04-21T13:45:44Z",
-      "2016-04-26T13:45:44Z",
-      "2016-12-19T15:23:49Z",
-      "2017-05-02T13:45:44Z"
+      "2025-02-09T16:04:02Z"
     ]
   },
   {
-    "value.label": "Medication",
-    "value.property": "stop",
-    "value.values": [
+    "label": "Medication",
+    "property": "STOP",
+    "distinctValues": [
       "2015-08-26T21:57:17Z",
       "2020-07-30T21:57:17Z",
       "2021-07-25T21:57:17Z",
@@ -824,18 +1162,40 @@
       "2022-10-07T09:04:02Z",
       "2025-01-25T19:04:02Z",
       "2016-02-29T14:04:13Z",
-      "2016-04-26T13:45:44Z",
-      "2017-05-02T13:45:44Z",
-      "2016-12-21T10:23:49Z",
-      "2018-05-08T13:45:44Z",
-      "2019-05-14T13:45:44Z",
-      "2020-05-19T13:45:44Z"
+      "2016-04-26T13:45:44Z"
     ]
   },
   {
-    "value.label": "Observation",
-    "value.property": "code",
-    "value.values": [
+    "label": "Observation",
+    "property": "CODE",
+    "distinctValues": [
+      "8302-2",
+      "72514-3",
+      "29463-7",
+      "39156-5",
+      "8462-4",
+      "8480-6",
+      "8867-4",
+      "9279-1",
+      "6690-2",
+      "789-8",
+      "718-7",
+      "4544-3",
+      "787-2",
+      "785-6",
+      "786-4",
+      "21000-5",
+      "777-3",
+      "32207-3",
+      "32623-1",
+      "72166-2",
+      "76501-6",
+      "93026-3",
+      "93027-1",
+      "93028-9",
+      "93038-8",
+      "93029-7",
+      "93030-5",
       "93031-3",
       "63586-2",
       "76437-3",
@@ -848,66 +1208,56 @@
       "54899-0",
       "93034-7",
       "93035-4",
-      "32624-9",
-      "56051-6",
-      "70274-6",
-      "2345-7",
-      "3094-0",
-      "2160-0",
-      "17861-6",
-      "2951-2",
-      "2823-3",
-      "2075-0",
-      "2028-9",
-      "33914-3",
-      "5767-9",
-      "34533-0",
-      "32167-9",
-      "5778-6",
-      "5792-7",
-      "25428-4"
+      "32624-9"
     ]
   },
   {
-    "value.label": "Observation",
-    "value.property": "date",
-    "value.values": [
-      "2022-10-03T12:39:46Z",
-      "2022-10-03T13:02:54Z",
-      "2023-05-01T11:47:52Z",
-      "2023-05-01T12:23:18Z",
-      "2023-05-01T13:07:20Z",
-      "2023-06-05T11:47:52Z",
-      "2023-06-05T12:40:07Z",
-      "2023-06-05T13:14:58Z",
-      "2023-06-05T13:52:40Z",
-      "2023-06-05T14:27:13Z",
-      "2023-10-30T11:47:52Z",
-      "2023-10-30T12:41:34Z",
-      "2023-10-30T13:04:43Z",
-      "2023-10-30T13:43:14Z",
-      "2023-10-30T14:20:10Z",
-      "2023-11-27T11:47:52Z",
-      "2023-11-27T12:36:47Z",
-      "2023-11-27T13:01:20Z",
-      "2023-11-27T13:39:46Z",
-      "2023-11-27T14:05:21Z",
-      "2024-01-01T11:47:52Z",
-      "2024-01-01T12:39:52Z",
-      "2024-01-01T13:08:47Z",
-      "2024-01-01T13:33:51Z",
-      "2024-01-01T14:07:59Z",
-      "2024-02-26T11:47:52Z",
-      "2024-02-26T12:47:50Z",
-      "2024-02-26T13:24:02Z",
-      "2024-02-26T13:58:05Z",
-      "2024-05-06T11:47:52Z"
+    "label": "Observation",
+    "property": "DATE",
+    "distinctValues": [
+      "2016-01-14T12:24:26Z",
+      "2016-01-14T12:59:03Z",
+      "2016-01-14T13:33:30Z",
+      "2016-01-14T14:15:05Z",
+      "2019-01-17T12:24:26Z",
+      "2019-01-17T13:15:35Z",
+      "2019-01-17T13:34:54Z",
+      "2019-01-17T14:07:02Z",
+      "2019-01-17T14:44:25Z",
+      "2019-01-17T15:12:20Z"
     ]
   },
   {
-    "value.label": "Observation",
-    "value.property": "description",
-    "value.values": [
+    "label": "Observation",
+    "property": "DESCRIPTION",
+    "distinctValues": [
+      "Body Height",
+      "Pain severity - 0-10 verbal numeric rating [Score] - Reported",
+      "Body Weight",
+      "Body mass index (BMI) [Ratio]",
+      "Diastolic Blood Pressure",
+      "Systolic Blood Pressure",
+      "Heart rate",
+      "Respiratory rate",
+      "Leukocytes [#/volume] in Blood by Automated count",
+      "Erythrocytes [#/volume] in Blood by Automated count",
+      "Hemoglobin [Mass/volume] in Blood",
+      "Hematocrit [Volume Fraction] of Blood by Automated count",
+      "MCV [Entitic volume] by Automated count",
+      "MCH [Entitic mass] by Automated count",
+      "MCHC [Mass/volume] by Automated count",
+      "Erythrocyte distribution width [Entitic volume] by Automated count",
+      "Platelets [#/volume] in Blood by Automated count",
+      "Platelet distribution width [Entitic volume] in Blood by Automated count",
+      "Platelet mean volume [Entitic volume] in Blood by Automated count",
+      "Tobacco smoking status",
+      "Within the last year  have you been afraid of your partner or ex-partner?",
+      "Do you feel physically and emotionally safe where you currently live?",
+      "Are you a refugee?",
+      "In the past year  have you spent more than 2 nights in a row in a jail  prison  detention center  or juvenile correctional facility?",
+      "Stress level",
+      "How often do you see or talk to people that you care about and feel close to (For example: talking to friends on the phone  visiting friends or family  going to church or club meetings)?",
+      "Has lack of transportation kept you from medical appointments  meetings  work  or from getting things needed for daily living",
       "In the past year  have you or any family members you live with been unable to get any of the following when it was really needed?",
       "What was your best estimate of the total income of all family members from all sources  before taxes  in last year?",
       "Primary insurance",
@@ -920,102 +1270,93 @@
       "Preferred language",
       "Have you been discharged from the armed forces of the United States?",
       "At any point in the past 2 years  has season or migrant farm work been your or your family's main source of income?",
-      "Race",
-      "Do you consider yourself Hispanic/Latino?",
-      "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]",
-      "Glucose [Mass/volume] in Serum or Plasma",
-      "Urea nitrogen [Mass/volume] in Serum or Plasma",
-      "Creatinine [Mass/volume] in Serum or Plasma",
-      "Calcium [Mass/volume] in Serum or Plasma",
-      "Sodium [Moles/volume] in Serum or Plasma",
-      "Potassium [Moles/volume] in Serum or Plasma",
-      "Chloride [Moles/volume] in Serum or Plasma",
-      "Carbon dioxide  total [Moles/volume] in Serum or Plasma",
-      "Glomerular filtration rate/1.73 sq M.predicted [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)",
-      "Appearance of Urine",
-      "Odor of Urine",
-      "Clarity of Urine",
-      "Color of Urine",
-      "Glucose [Mass/volume] in Urine by Test strip",
-      "Glucose [Presence] in Urine by Test strip"
+      "Race"
     ]
   },
   {
-    "value.label": "Observation",
-    "value.property": "units",
-    "value.values": [
-      "/a",
-      "{#}",
-      "{score}",
-      "mg/dL",
-      "mmol/L",
-      "mL/min/{1.73_m2}",
-      "{nominal}",
-      "pH",
-      "%",
+    "label": "Observation",
+    "property": "ENCOUNTER",
+    "distinctValues": [
+      "5f4177ca-c592-bc22-116c-27de8b3b1cb5",
+      "4a423bf9-cd55-bc73-9ae0-fffaeaf87de0",
+      "b20633cf-fceb-0823-56a1-b3a79107cec9",
+      "b415a053-d650-aa8c-fd74-644db2d69eec",
+      "37121a78-c873-533b-e631-cb9a1b8f1841",
+      "22b8f583-2670-3a12-2084-1e2463cfcd2d",
+      "c511ac85-cd5b-bf19-7c8b-95fd27d355eb",
+      "3388cc3d-45c8-f52d-4185-fa5a593d1be3",
+      "3b81c72e-3c1b-6259-21f5-fa49a4eaeb7f",
+      "15e774fb-f541-3324-c7cc-3fec088d1a53"
+    ]
+  },
+  {
+    "label": "Observation",
+    "property": "Id",
+    "distinctValues": [
+      "0001337b-98e3-4cdd-ae79-13f504fc3166",
+      "0001de96-a0a8-484f-abbe-1c17dcfe6ae8",
+      "00033f3e-1e32-493b-ac65-34f6467b6995",
+      "0004f25b-e509-482f-9027-b26ec6d0a801",
+      "00050320-6f33-479d-a103-64d0ade3d60c",
+      "00053cf6-ba2b-4ef8-b765-1506d95ab1bb",
+      "00057cd0-4407-437c-a29a-6404d47aafa2",
+      "0007b6a3-ceba-40fd-a63a-bcfe09896d2d",
+      "000868d4-bb35-4139-b9f3-a9d0b83b04ce",
+      "0008fe2f-fae7-4dbe-b3cf-fdecd86715e2"
+    ]
+  },
+  {
+    "label": "Observation",
+    "property": "PATIENT",
+    "distinctValues": [
+      "34a210f9-5ce1-ad63-790f-e404455e3e18",
+      "0fe22cec-1a19-99da-b67f-7ce364c4cf3e",
+      "b1f7b5a9-5cf5-6050-b23c-81027f53bdfd",
+      "1f2aa6c9-41bd-aa05-9da3-e557d8949816",
+      "80e114d1-013b-b546-7aba-17eb360dde04",
+      "bc5d2ab0-ef61-ff19-87cd-0c586ec0422a",
+      "2c489dce-38c7-4b0a-d7e2-5101383d93a1",
+      "bddb802b-a1f0-15c6-0d69-3b7511a9fd5f",
+      "95559bb7-a9a3-104c-a710-e9a1e22b312e",
+      "446d8007-ae35-2994-77cd-c44d9f4286a6"
+    ]
+  },
+  {
+    "label": "Observation",
+    "property": "UNITS",
+    "distinctValues": [
       "cm",
+      "{score}",
       "kg",
       "kg/m2",
       "mm[Hg]",
       "/min",
-      "mL/min",
-      "g/dL",
-      "g/L",
-      "U/L",
-      "a",
-      "Cel",
       "10*3/uL",
       "10*6/uL",
-      "fL",
-      "pg",
-      "s",
-      "{INR}",
-      "[pH]",
-      "pg/mL",
-      "m[IU]/L",
-      "{presence}"
+      "g/dL",
+      "%"
     ]
   },
   {
-    "value.label": "Observation",
-    "value.property": "value",
-    "value.values": [
-      "I choose not to answer this question",
-      "115082",
-      "None/uninsured",
-      "Full-time work",
-      "More than high school",
-      "584 O'Connell Bypass",
-      "No",
-      "I have housing",
-      "6.0",
-      "English",
-      "Black/African American",
-      "17.0",
-      "80.8",
-      "7.5",
+    "label": "Observation",
+    "property": "VALUE",
+    "distinctValues": [
+      "181.2",
       "2.0",
-      "10.0",
-      "137.2",
-      "4.4",
-      "108.5",
-      "23.9",
-      "53.0",
-      "Cloudy urine (finding)",
-      "Urine smell ammoniacal (finding)",
-      "Translucent (qualifier value)",
-      "Brown color (qualifier value)",
-      "1.6",
-      "Urine glucose test = ++ (finding)",
-      "1.3",
-      "Finding of bilirubin in urine (finding)",
-      "6.9"
+      "73.4",
+      "22.3",
+      "68.0",
+      "107.0",
+      "80.0",
+      "15.0",
+      "8.2",
+      "5.1"
     ]
   },
   {
-    "value.label": "Patient",
-    "value.property": "address",
-    "value.values": [
+    "label": "Patient",
+    "property": "ADDRESS",
+    "distinctValues": [
       "417 Jacobs Avenue",
       "644 Dibbert Corner Suite 64",
       "153 Quigley Branch",
@@ -1025,33 +1366,13 @@
       "880 Dickens Manor",
       "392 Flatley Loaf Unit 10",
       "787 Streich Road",
-      "161 Toy Row Unit 54",
-      "516 Bednar Mill",
-      "859 Rowe Landing",
-      "457 Feil Knoll",
-      "652 Windler Flat",
-      "691 Romaguera Loaf",
-      "240 Dicki Landing",
-      "299 Block Byway Suite 68",
-      "455 Schultz Tunnel Unit 7",
-      "336 Dickens Center Apt 46",
-      "293 Willms Gardens Apt 95",
-      "976 Graham Brook Apt 39",
-      "1091 Reichel Harbor",
-      "896 Becker Well",
-      "549 Rohan Crossing Unit 34",
-      "315 Harber Rest",
-      "430 Rosenbaum Throughway",
-      "814 Cartwright Stravenue Unit 40",
-      "970 Collier Village Suite 98",
-      "759 Bednar Quay",
-      "941 Christiansen Flat Suite 66"
+      "161 Toy Row Unit 54"
     ]
   },
   {
-    "value.label": "Patient",
-    "value.property": "birthdate",
-    "value.values": [
+    "label": "Patient",
+    "property": "BIRTHDATE",
+    "distinctValues": [
       "1993-11-11",
       "1987-08-02",
       "1989-03-05",
@@ -1061,18 +1382,13 @@
       "2001-12-30",
       "2019-11-07",
       "1977-08-19",
-      "2007-01-13",
-      "1993-02-25",
-      "2009-08-31",
-      "1972-02-12",
-      "2008-09-12",
-      "2004-04-21"
+      "2007-01-13"
     ]
   },
   {
-    "value.label": "Patient",
-    "value.property": "birthplace",
-    "value.values": [
+    "label": "Patient",
+    "property": "BIRTHPLACE",
+    "distinctValues": [
       "Sudbury  Massachusetts  US",
       "Peabody  Massachusetts  US",
       "Dover  Massachusetts  US",
@@ -1082,33 +1398,13 @@
       "Bellingham  Massachusetts  US",
       "Swampscott  Massachusetts  US",
       "Worcester  Massachusetts  US",
-      "Lowell  Massachusetts  US",
-      "Brockton  Massachusetts  US",
-      "Franklin  Massachusetts  US",
-      "Haverhill  Massachusetts  US",
-      "Springfield  Massachusetts  US",
-      "Holbrook  Massachusetts  US",
-      "Fall River  Massachusetts  US",
-      "Concord  Massachusetts  US",
-      "Grafton  Massachusetts  US",
-      "Boston  Massachusetts  US",
-      "Cantho  Cần Thơ  VN",
-      "Santo Domingo  National District  DO",
-      "Woburn  Massachusetts  US",
-      "Southborough  Massachusetts  US",
-      "Natick  Massachusetts  US",
-      "Malden  Massachusetts  US",
-      "West Springfield  Massachusetts  US",
-      "Maynard  Massachusetts  US",
-      "Canton  Massachusetts  US",
-      "Norton  Massachusetts  US",
-      "East Longmeadow  Massachusetts  US"
+      "Lowell  Massachusetts  US"
     ]
   },
   {
-    "value.label": "Patient",
-    "value.property": "deathdate",
-    "value.values": [
+    "label": "Patient",
+    "property": "DEATHDATE",
+    "distinctValues": [
       "1995-04-01",
       "2004-03-04",
       "2002-09-11",
@@ -1118,26 +1414,37 @@
       "1984-03-17",
       "2003-08-29",
       "2017-02-16",
-      "2000-07-06",
-      "2020-02-23",
-      "1998-09-08",
-      "2007-06-29",
-      "2007-09-10",
-      "2014-03-02"
+      "2000-07-06"
     ]
   },
   {
-    "value.label": "Patient",
-    "value.property": "ethnicity",
-    "value.values": [
+    "label": "Patient",
+    "property": "DRIVERS",
+    "distinctValues": [
+      "S99951712",
+      "S99995857",
+      "S99989586",
+      "S99920797",
+      "S99986563",
+      "S99990829",
+      "S99945082",
+      "S99917460",
+      "S99946847",
+      "S99992311"
+    ]
+  },
+  {
+    "label": "Patient",
+    "property": "ETHNICITY",
+    "distinctValues": [
       "nonhispanic",
       "hispanic"
     ]
   },
   {
-    "value.label": "Patient",
-    "value.property": "first",
-    "value.values": [
+    "label": "Patient",
+    "property": "FIRST",
+    "distinctValues": [
       "Alexis664",
       "Mariel814",
       "Luetta803",
@@ -1147,41 +1454,37 @@
       "Dino214",
       "Ulysses632",
       "Pauline896",
-      "Jadwiga271",
-      "Man114",
-      "Nicholas495",
-      "Stanley702",
-      "Derick144",
-      "Jack927",
-      "Corine538",
-      "Mervin111",
-      "Eduardo902",
-      "Sue491",
-      "Cassaundra447",
-      "Edwin773",
-      "Débora815",
-      "Julian715",
-      "Rena430",
-      "Sal878",
-      "Stanton715",
-      "Miss492",
-      "Evelin941",
-      "Jacinto644",
-      "Malorie969"
+      "Jadwiga271"
     ]
   },
   {
-    "value.label": "Patient",
-    "value.property": "gender",
-    "value.values": [
+    "label": "Patient",
+    "property": "GENDER",
+    "distinctValues": [
       "M",
       "F"
     ]
   },
   {
-    "value.label": "Patient",
-    "value.property": "last",
-    "value.values": [
+    "label": "Patient",
+    "property": "Id",
+    "distinctValues": [
+      "00df57ef-f14a-d64f-1363-ea5addcd65a1",
+      "04bdf784-d292-2362-940a-22c7b4670801",
+      "0859da6e-2508-d245-e483-b698cab1e7a4",
+      "08ae06c3-a18b-9352-d94b-97eeb6a443e8",
+      "0a5d638e-aeb9-5daf-ccfe-3fa63849546c",
+      "0ae6ab8b-ef46-2eba-eb82-8c62699fa566",
+      "0bab50a6-9f26-b095-a651-5704e621d436",
+      "0eaf6788-c012-5815-774e-b67fd1f48fb2",
+      "0f513626-2d46-1178-db47-491008ec76a3",
+      "0fe22cec-1a19-99da-b67f-7ce364c4cf3e"
+    ]
+  },
+  {
+    "label": "Patient",
+    "property": "LAST",
+    "distinctValues": [
       "Heathcote539",
       "Lang846",
       "Dickens475",
@@ -1191,33 +1494,29 @@
       "Shanahan202",
       "McDermott739",
       "Weimann465",
-      "Gerhold939",
-      "Barrows492",
-      "Gleichner915",
-      "Effertz744",
-      "Crooks415",
-      "Hessel84",
-      "Ledner144",
-      "Bradtke547",
-      "Herzog843",
-      "Kunde533",
-      "Mohr916",
-      "Kerluke267",
-      "Rath779",
-      "Sandoval902",
-      "Hickle134",
-      "Jacobi462",
-      "Rippin620",
-      "Beier427",
-      "Renner328",
-      "Bogisich202",
-      "Blick895"
+      "Gerhold939"
     ]
   },
   {
-    "value.label": "Patient",
-    "value.property": "marital",
-    "value.values": [
+    "label": "Patient",
+    "property": "MAIDEN",
+    "distinctValues": [
+      "Sipes176",
+      "Orn563",
+      "Lang846",
+      "Harber290",
+      "Cruickshank494",
+      "Kutch271",
+      "Leyva523",
+      "Robel940",
+      "Sporer811",
+      "Hickle134"
+    ]
+  },
+  {
+    "label": "Patient",
+    "property": "MARITAL",
+    "distinctValues": [
       "S",
       "M",
       "D",
@@ -1225,9 +1524,34 @@
     ]
   },
   {
-    "value.label": "Patient",
-    "value.property": "race",
-    "value.values": [
+    "label": "Patient",
+    "property": "PASSPORT",
+    "distinctValues": [
+      "X60064394X",
+      "X51132243X",
+      "X14035271X",
+      "X55368805X",
+      "X34475162X",
+      "X32743755X",
+      "X81264838X",
+      "X63180445X",
+      "X89845435X",
+      "X59149624X"
+    ]
+  },
+  {
+    "label": "Patient",
+    "property": "PREFIX",
+    "distinctValues": [
+      "Mr.",
+      "Mrs.",
+      "Ms."
+    ]
+  },
+  {
+    "label": "Patient",
+    "property": "RACE",
+    "distinctValues": [
       "white",
       "black",
       "asian",
@@ -1235,9 +1559,9 @@
     ]
   },
   {
-    "value.label": "Patient",
-    "value.property": "ssn",
-    "value.values": [
+    "label": "Patient",
+    "property": "SSN",
+    "distinctValues": [
       "999-17-3914",
       "999-31-9665",
       "999-86-4327",
@@ -1247,33 +1571,21 @@
       "999-23-9442",
       "999-48-7514",
       "999-92-6076",
-      "999-69-3816",
-      "999-12-5832",
-      "999-98-8229",
-      "999-16-9376",
-      "999-77-1897",
-      "999-34-2486",
-      "999-30-7101",
-      "999-27-2597",
-      "999-90-9165",
-      "999-99-9302",
-      "999-37-5571",
-      "999-92-6611",
-      "999-98-9274",
-      "999-23-9999",
-      "999-99-6310",
-      "999-75-3270",
-      "999-70-4697",
-      "999-39-7314",
-      "999-89-7711",
-      "999-70-2249",
-      "999-92-7384"
+      "999-69-3816"
     ]
   },
   {
-    "value.label": "Procedure",
-    "value.property": "code",
-    "value.values": [
+    "label": "Patient",
+    "property": "SUFFIX",
+    "distinctValues": [
+      "PhD",
+      "MD"
+    ]
+  },
+  {
+    "label": "Procedure",
+    "property": "CODE",
+    "distinctValues": [
       "710824005",
       "171207006",
       "428211000124100",
@@ -1303,13 +1615,23 @@
       "10383002",
       "714812005",
       "386394001",
-      "5880005"
+      "5880005",
+      "713106006",
+      "274804006",
+      "225158009",
+      "44608003",
+      "104091002",
+      "47758006",
+      "31676001",
+      "310861008",
+      "165829005",
+      "269828009"
     ]
   },
   {
-    "value.label": "Procedure",
-    "value.property": "description",
-    "value.values": [
+    "label": "Procedure",
+    "property": "DESCRIPTION",
+    "distinctValues": [
       "Assessment of health and social care needs (procedure)",
       "Depression screening (procedure)",
       "Assessment of substance use (procedure)",
@@ -1339,13 +1661,71 @@
       "Counseling for termination of pregnancy (procedure)",
       "Induced termination of pregnancy (procedure)",
       "Pregnancy termination care (regime/therapy)",
-      "Physical examination procedure (procedure)"
+      "Physical examination procedure (procedure)",
+      "Screening for drug abuse (procedure)",
+      "Evaluation of uterine fundal height (procedure)",
+      "Auscultation of the fetal heart (procedure)",
+      "Blood group typing (procedure)",
+      "Hemogram  automated  with red blood cells  white blood cells  hemoglobin  hematocrit  indices  platelet count  and manual white blood cell differential (procedure)",
+      "Hepatitis B surface antigen measurement (procedure)",
+      "Human immunodeficiency virus antigen test (procedure)",
+      "Chlamydia antigen test (procedure)",
+      "Gonorrhea infection titer test (procedure)",
+      "Syphilis infectious titer test (procedure)"
     ]
   },
   {
-    "value.label": "Procedure",
-    "value.property": "reason_code",
-    "value.values": [
+    "label": "Procedure",
+    "property": "ENCOUNTER",
+    "distinctValues": [
+      "5f4177ca-c592-bc22-116c-27de8b3b1cb5",
+      "4a423bf9-cd55-bc73-9ae0-fffaeaf87de0",
+      "b20633cf-fceb-0823-56a1-b3a79107cec9",
+      "8f0cdd82-625a-add2-9d68-4ce2346ac436",
+      "b415a053-d650-aa8c-fd74-644db2d69eec",
+      "c7bbb747-aab0-e272-22dc-e0dfed03e1e5",
+      "37121a78-c873-533b-e631-cb9a1b8f1841",
+      "22b8f583-2670-3a12-2084-1e2463cfcd2d",
+      "75fe0f3a-d00c-0d1c-9420-d01110c818a7",
+      "bc75f7cf-beb9-0bc7-fb6d-3d3c4bb594f0"
+    ]
+  },
+  {
+    "label": "Procedure",
+    "property": "Id",
+    "distinctValues": [
+      "00030ed6-93ed-4243-9bd7-116af2f10fcd",
+      "0004eab6-2ffb-4d71-8977-303002a8cee5",
+      "0005e0f3-048b-41c8-9d66-a54219fa0c76",
+      "000910f0-7718-4f2e-826e-3875f118e912",
+      "000ec97f-661d-487c-b34f-0769e649b0ca",
+      "001078cd-c4b1-4f88-82b0-d6631ae67bdd",
+      "00150f4c-b9e5-493c-8123-bdf022a9a331",
+      "00152e32-6466-4a0f-b137-105843c92938",
+      "0015eb65-0958-4c8c-b821-2a401c747af6",
+      "001602fc-c571-46b7-aee5-35b1f09db991"
+    ]
+  },
+  {
+    "label": "Procedure",
+    "property": "PATIENT",
+    "distinctValues": [
+      "34a210f9-5ce1-ad63-790f-e404455e3e18",
+      "0fe22cec-1a19-99da-b67f-7ce364c4cf3e",
+      "b1f7b5a9-5cf5-6050-b23c-81027f53bdfd",
+      "1f2aa6c9-41bd-aa05-9da3-e557d8949816",
+      "80e114d1-013b-b546-7aba-17eb360dde04",
+      "bc5d2ab0-ef61-ff19-87cd-0c586ec0422a",
+      "2c489dce-38c7-4b0a-d7e2-5101383d93a1",
+      "bddb802b-a1f0-15c6-0d69-3b7511a9fd5f",
+      "95559bb7-a9a3-104c-a710-e9a1e22b312e",
+      "446d8007-ae35-2994-77cd-c44d9f4286a6"
+    ]
+  },
+  {
+    "label": "Procedure",
+    "property": "REASONCODE",
+    "distinctValues": [
       "103697008",
       "18718003",
       "72892002",
@@ -1368,6 +1748,7 @@
       "37320007",
       "278602001",
       "278598003",
+      "91302008",
       "76571007",
       "67782005",
       "183996000",
@@ -1375,13 +1756,22 @@
       "284551006",
       "68496003",
       "414545008",
-      "274531002"
+      "274531002",
+      "6525002",
+      "39898005",
+      "109838007",
+      "35999006",
+      "58150001",
+      "370247008",
+      "33737001",
+      "840544004",
+      "389087006"
     ]
   },
   {
-    "value.label": "Procedure",
-    "value.property": "reason_description",
-    "value.values": [
+    "label": "Procedure",
+    "property": "REASONDESCRIPTION",
+    "distinctValues": [
       "Patient referral for dental care (procedure)",
       "Gingival disease (disorder)",
       "Normal pregnancy (finding)",
@@ -1404,6 +1794,7 @@
       "Loss of teeth (disorder)",
       "Loose dental filling (finding)",
       "Leaking dental filling (finding)",
+      "Sepsis (disorder)",
       "Septic shock (disorder)",
       "Acute respiratory distress syndrome (disorder)",
       "Sterilization requested (situation)",
@@ -1411,35 +1802,40 @@
       "Laceration of foot (disorder)",
       "Polyp of colon (disorder)",
       "Ischemic heart disease (disorder)",
-      "Abnormal findings diagnostic imaging heart+coronary circulat (finding)"
+      "Abnormal findings diagnostic imaging heart+coronary circulat (finding)",
+      "Dependent drug abuse (disorder)",
+      "Sleep disorder (disorder)",
+      "Overlapping malignant neoplasm of colon (disorder)",
+      "Blighted ovum (disorder)",
+      "Fracture of clavicle (disorder)",
+      "Facial laceration (disorder)",
+      "Fracture of rib (disorder)",
+      "Suspected disease caused by Severe acute respiratory coronavirus 2 (situation)",
+      "Hypoxemia (disorder)"
     ]
   },
   {
-    "value.label": "Procedure",
-    "value.property": "start",
-    "value.values": [
+    "label": "Procedure",
+    "property": "START",
+    "distinctValues": [
       "2016-01-14T12:24:26Z",
+      "2016-01-14T12:59:03Z",
       "2016-01-14T13:09:19Z",
       "2016-01-14T13:33:30Z",
       "2016-01-14T13:46:22Z",
       "2019-01-17T12:24:26Z",
       "2019-01-17T13:15:35Z",
       "2019-01-17T13:34:54Z",
-      "2019-01-17T14:18:52Z",
-      "2019-01-17T14:44:25Z",
-      "2019-01-17T15:12:20Z",
-      "2019-01-17T15:23:24Z",
-      "2019-01-17T15:53:07Z",
-      "2019-01-24T12:24:26Z",
-      "2019-01-24T12:54:26Z",
-      "2019-01-24T13:12:07Z"
+      "2019-01-17T14:07:02Z",
+      "2019-01-17T14:18:52Z"
     ]
   },
   {
-    "value.label": "Procedure",
-    "value.property": "stop",
-    "value.values": [
+    "label": "Procedure",
+    "property": "STOP",
+    "distinctValues": [
       "2016-01-14T12:59:03Z",
+      "2016-01-14T13:09:19Z",
       "2016-01-14T13:33:30Z",
       "2016-01-14T13:46:22Z",
       "2016-01-14T14:15:05Z",
@@ -1447,13 +1843,7 @@
       "2019-01-17T13:15:35Z",
       "2019-01-17T13:34:54Z",
       "2019-01-17T14:07:02Z",
-      "2019-01-17T14:44:25Z",
-      "2019-01-17T15:12:20Z",
-      "2019-01-17T15:23:24Z",
-      "2019-01-17T15:53:07Z",
-      "2019-01-17T15:58:27Z",
-      "2019-01-24T12:54:26Z",
-      "2019-01-24T13:12:07Z"
+      "2019-01-17T14:18:52Z"
     ]
   }
 ]

@@ -2,40 +2,32 @@
   {
     "nodes": [
       {
-        "identity": -103,
+        "identity": -105,
         "labels": [
           "Condition"
         ],
         "properties": {
           "name": "Condition",
-          "indexes": [],
+          "indexes": [
+            "Id"
+          ],
           "constraints": []
         },
-        "elementId": "-103"
+        "elementId": "-105"
       },
       {
-        "identity": -102,
+        "identity": -107,
         "labels": [
           "Allergy"
         ],
         "properties": {
           "name": "Allergy",
-          "indexes": [],
+          "indexes": [
+            "Id"
+          ],
           "constraints": []
         },
-        "elementId": "-102"
-      },
-      {
-        "identity": -104,
-        "labels": [
-          "CarePlan"
-        ],
-        "properties": {
-          "name": "CarePlan",
-          "indexes": [],
-          "constraints": []
-        },
-        "elementId": "-104"
+        "elementId": "-107"
       },
       {
         "identity": -106,
@@ -44,36 +36,40 @@
         ],
         "properties": {
           "name": "Immunization",
-          "indexes": [],
+          "indexes": [
+            "Id"
+          ],
           "constraints": []
         },
         "elementId": "-106"
       },
       {
-        "identity": -105,
-        "labels": [
-          "Medication"
-        ],
-        "properties": {
-          "name": "Medication",
-          "indexes": [],
-          "constraints": []
-        },
-        "elementId": "-105"
-      },
-      {
-        "identity": -107,
+        "identity": -102,
         "labels": [
           "Observation"
         ],
         "properties": {
           "name": "Observation",
           "indexes": [
-            "uid"
+            "Id"
           ],
           "constraints": []
         },
-        "elementId": "-107"
+        "elementId": "-102"
+      },
+      {
+        "identity": -103,
+        "labels": [
+          "Medication"
+        ],
+        "properties": {
+          "name": "Medication",
+          "indexes": [
+            "Id"
+          ],
+          "constraints": []
+        },
+        "elementId": "-103"
       },
       {
         "identity": -100,
@@ -82,10 +78,10 @@
         ],
         "properties": {
           "name": "Patient",
-          "indexes": [],
-          "constraints": [
-            "Constraint( id=3, name='constraint_3f7f1283', type='UNIQUENESS', schema=(:Patient {id}), ownedIndex=2 )"
-          ]
+          "indexes": [
+            "Id"
+          ],
+          "constraints": []
         },
         "elementId": "-100"
       },
@@ -96,22 +92,36 @@
         ],
         "properties": {
           "name": "Encounter",
-          "indexes": [],
-          "constraints": [
-            "Constraint( id=5, name='constraint_e46cc10', type='UNIQUENESS', schema=(:Encounter {id}), ownedIndex=4 )"
-          ]
+          "indexes": [
+            "Id"
+          ],
+          "constraints": []
         },
         "elementId": "-101"
       },
       {
-        "identity": -108,
+        "identity": -104,
         "labels": [
           "Procedure"
         ],
         "properties": {
           "name": "Procedure",
           "indexes": [
-            "uid"
+            "Id"
+          ],
+          "constraints": []
+        },
+        "elementId": "-104"
+      },
+      {
+        "identity": -108,
+        "labels": [
+          "Careplan"
+        ],
+        "properties": {
+          "name": "Careplan",
+          "indexes": [
+            "Id"
           ],
           "constraints": []
         },
@@ -119,18 +129,6 @@
       }
     ],
     "relationships": [
-      {
-        "identity": -110,
-        "start": -100,
-        "end": -104,
-        "type": "HAS_CAREPLAN",
-        "properties": {
-          "name": "HAS_CAREPLAN"
-        },
-        "elementId": "-110",
-        "startNodeElementId": "-100",
-        "endNodeElementId": "-104"
-      },
       {
         "identity": -112,
         "start": -100,
@@ -142,6 +140,18 @@
         "elementId": "-112",
         "startNodeElementId": "-100",
         "endNodeElementId": "-106"
+      },
+      {
+        "identity": -114,
+        "start": -100,
+        "end": -108,
+        "type": "HAS_CAREPLAN",
+        "properties": {
+          "name": "HAS_CAREPLAN"
+        },
+        "elementId": "-114",
+        "startNodeElementId": "-100",
+        "endNodeElementId": "-108"
       },
       {
         "identity": -100,
@@ -156,76 +166,64 @@
         "endNodeElementId": "-101"
       },
       {
-        "identity": -114,
+        "identity": -110,
         "start": -100,
-        "end": -108,
+        "end": -104,
         "type": "HAS_PROCEDURE",
         "properties": {
           "name": "HAS_PROCEDURE"
         },
-        "elementId": "-114",
+        "elementId": "-110",
         "startNodeElementId": "-100",
-        "endNodeElementId": "-108"
-      },
-      {
-        "identity": -101,
-        "start": -100,
-        "end": -102,
-        "type": "HAS_ALLERGY",
-        "properties": {
-          "name": "HAS_ALLERGY"
-        },
-        "elementId": "-101",
-        "startNodeElementId": "-100",
-        "endNodeElementId": "-102"
-      },
-      {
-        "identity": -111,
-        "start": -100,
-        "end": -105,
-        "type": "HAS_MEDICATION",
-        "properties": {
-          "name": "HAS_MEDICATION"
-        },
-        "elementId": "-111",
-        "startNodeElementId": "-100",
-        "endNodeElementId": "-105"
-      },
-      {
-        "identity": -109,
-        "start": -100,
-        "end": -103,
-        "type": "HAS_CONDITION",
-        "properties": {
-          "name": "HAS_CONDITION"
-        },
-        "elementId": "-109",
-        "startNodeElementId": "-100",
-        "endNodeElementId": "-103"
+        "endNodeElementId": "-104"
       },
       {
         "identity": -113,
         "start": -100,
         "end": -107,
-        "type": "HAS_OBSERVATION",
+        "type": "HAS_ALLERGY",
         "properties": {
-          "name": "HAS_OBSERVATION"
+          "name": "HAS_ALLERGY"
         },
         "elementId": "-113",
         "startNodeElementId": "-100",
         "endNodeElementId": "-107"
       },
       {
-        "identity": -105,
-        "start": -105,
-        "end": -101,
-        "type": "PART_OF_ENCOUNTER",
+        "identity": -109,
+        "start": -100,
+        "end": -103,
+        "type": "HAS_MEDICATION",
         "properties": {
-          "name": "PART_OF_ENCOUNTER"
+          "name": "HAS_MEDICATION"
         },
-        "elementId": "-105",
-        "startNodeElementId": "-105",
-        "endNodeElementId": "-101"
+        "elementId": "-109",
+        "startNodeElementId": "-100",
+        "endNodeElementId": "-103"
+      },
+      {
+        "identity": -111,
+        "start": -100,
+        "end": -105,
+        "type": "HAS_CONDITION",
+        "properties": {
+          "name": "HAS_CONDITION"
+        },
+        "elementId": "-111",
+        "startNodeElementId": "-100",
+        "endNodeElementId": "-105"
+      },
+      {
+        "identity": -101,
+        "start": -100,
+        "end": -102,
+        "type": "HAS_OBSERVATION",
+        "properties": {
+          "name": "HAS_OBSERVATION"
+        },
+        "elementId": "-101",
+        "startNodeElementId": "-100",
+        "endNodeElementId": "-102"
       },
       {
         "identity": -108,
@@ -240,6 +238,18 @@
         "endNodeElementId": "-101"
       },
       {
+        "identity": -105,
+        "start": -105,
+        "end": -101,
+        "type": "PART_OF_ENCOUNTER",
+        "properties": {
+          "name": "PART_OF_ENCOUNTER"
+        },
+        "elementId": "-105",
+        "startNodeElementId": "-105",
+        "endNodeElementId": "-101"
+      },
+      {
         "identity": -103,
         "start": -103,
         "end": -101,
@@ -249,6 +259,18 @@
         },
         "elementId": "-103",
         "startNodeElementId": "-103",
+        "endNodeElementId": "-101"
+      },
+      {
+        "identity": -104,
+        "start": -104,
+        "end": -101,
+        "type": "PART_OF_ENCOUNTER",
+        "properties": {
+          "name": "PART_OF_ENCOUNTER"
+        },
+        "elementId": "-104",
+        "startNodeElementId": "-104",
         "endNodeElementId": "-101"
       },
       {
@@ -285,18 +307,6 @@
         },
         "elementId": "-102",
         "startNodeElementId": "-102",
-        "endNodeElementId": "-101"
-      },
-      {
-        "identity": -104,
-        "start": -104,
-        "end": -101,
-        "type": "PART_OF_ENCOUNTER",
-        "properties": {
-          "name": "PART_OF_ENCOUNTER"
-        },
-        "elementId": "-104",
-        "startNodeElementId": "-104",
         "endNodeElementId": "-101"
       }
     ]
