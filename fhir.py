@@ -47,7 +47,7 @@ def embed_query(text: str) -> list:
 
 
 def search_qdrant(collection: str, embedding: list, top_k: int = 1) -> str:
-    qdrant = qdrant_queries if collection == QDRANT_COLLECTION else qdrant_schema
+    qdrant = qdrant_queries #if collection == QDRANT_COLLECTION else qdrant_schema
     results = qdrant.search(
         collection_name=collection,
         search_request=SearchRequest(
@@ -84,33 +84,19 @@ def store_query_and_response(query: str, response: str):
 
 # ---- Prompt Builder ---- #
 def build_prompt(user_query, schema_str) -> List[Dict[str, str]]:
-    context = f"""You are an expert in Cypher query generation for a medical knowledge graph.
+    context = f"""You're a Cypher expert for a FHIR-based medical knowledge graph built from the Synthea dataset in Neo4j.
 
 Schema:
 {schema_str}
 
-User Query: {user_query}
+User Question: "{user_query}"
 
-Generate the most accurate Cypher query. Only return the query, no explanation.
+Return a Cypher query that answers the question. 
+No explanation, just the Cypher code.
 """
     return [{"role": "user", "content": context}]
 
-# ---- Load Schema ---- #
-def get_schema_str_from_file(path="C:/Users/adity/OneDrive/Desktop/fhirVIZ/schema.json") -> str:
-    with open(path, "r", encoding="utf-8-sig") as f:
-        content = f.read()
-        data = json.loads(content)
-
-    # Extract the first item which has nodes and relationships
-    schema = data[0]  # List with a single dict
-    nodes = schema.get("nodes", [])
-    relationships = schema.get("relationships", [])
-
-    # Convert to strings (you can format this better if needed)
-    nodes_str = "\n".join([str(node) for node in nodes])
-    rels_str = "\n".join([str(rel) for rel in relationships])
-
-    return f"Nodes:\n{nodes_str}\n\nRelationships:\n{rels_str}"
+# 
 
 # ---- Cypher Executor ---- #
 def execute_cypher(driver, cypher_query: str) -> List[dict]:
@@ -164,7 +150,7 @@ def run_retrieval_node(state: AgentState) -> AgentState:
             kg_data = execute_cypher(neo4j_driver, cypher_query)
 
             # Optional: store new query-response in Qdrant
-            store_query_and_response(user_query, cypher_query)
+            # store_query_and_response(user_query, cypher_query)
 
             state.update({
                 "cypher": cypher_query,
@@ -197,15 +183,19 @@ def run_coding_node(state: AgentState) -> AgentState:
         return state
 
     prompt = [
-        {"role": "system", "content": "You're a Python data viz expert."},
-        {"role": "user", "content": f"""Data:
+    {"role": "system", "content": "You're a Python expert in medical data visualization."},
+    {"role": "user", "content": f"""Given this Neo4j query result (FHIR data from Synthea):
+
+{state['query']}
 {state['kg_data']}
 
-Write a matplotlib/seaborn script to visualize it.
-- Use pandas for DataFrame.
-- Save chart with plt.savefig("chart.png").
-- Output only the code."""}
-    ]
+Generate a Python script using pandas and matplotlib/seaborn to visualize it.
+
+- Use plt.savefig("chart.png") at the end.
+- Output only valid Python code.
+- No explanations or markdown."""}
+]
+
 
     try:
         response = client.chat.completions.create(
@@ -253,13 +243,8 @@ def run_debugging_node(state: AgentState) -> AgentState:
         return state
 
     prompt = [
-        {
-            "role": "system",
-            "content": "You are a debugging assistant."
-        },
-        {
-            "role": "user",
-            "content": f"""Fix this code:
+    {"role": "system", "content": "You are a Python code fixer."},
+    {"role": "user", "content": f"""Fix the following visualization script.
 
 Error:
 {state['error']}
@@ -267,9 +252,8 @@ Error:
 Code:
 {state['code']}
 
-Return only corrected code."""
-        }
-    ]
+Only return the corrected Python code. No extra text."""}
+]
 
     try:
         response = client.chat.completions.create(
@@ -318,11 +302,6 @@ graph.add_conditional_edges("execution", execution_transition_condition, {
 
 fsm = graph.compile()
 
-# ---- Entry ---- #
-# if __name__ == "__main__":
-#     query = input("Query: ").strip()
-#     result = fsm.invoke({"query": query})
-#     print(result.get("output") or result.get("error"))
 
 if __name__ == "__main__":
     # Test Retrieval Node Only
@@ -331,3 +310,72 @@ if __name__ == "__main__":
 
     print("\n--- FINAL RETRIEVAL STATE ---")
     print(json.dumps(result_state, indent=2))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ---- Load Schema ---- #
+# def get_schema_str_from_file(path="C:/Users/adity/OneDrive/Desktop/fhirVIZ/schema.json") -> str:
+#     with open(path, "r", encoding="utf-8-sig") as f:
+#         content = f.read()
+#         data = json.loads(content)
+
+#     # Extract the first item which has nodes and relationships
+#     schema = data[0]  # List with a single dict
+#     nodes = schema.get("nodes", [])
+#     relationships = schema.get("relationships", [])
+
+#     # Convert to strings (you can format this better if needed)
+#     nodes_str = "\n".join([str(node) for node in nodes])
+#     rels_str = "\n".join([str(rel) for rel in relationships])
+
+#     return f"Nodes:\n{nodes_str}\n\nRelationships:\n{rels_str}"
+
+
+
+# ---- Entry ---- #
+# if __name__ == "__main__":
+#     query = input("Query: ").strip()
+#     result = fsm.invoke({"query": query})
+#     print(result.get("output") or result.get("error"))
