@@ -22,11 +22,11 @@ class AgentState(TypedDict, total=False):
     debug_attempts: Optional[int]
 
 # ---- Config ---- #
-NEO4J_URI = "bolt://localhost:7687"
-NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "aditya2004"
-QDRANT_COLLECTION = "medical_queries"
-OPENAI_KEY = "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"  # Add your OpenAI API key here
+NEO4J_URI = ""
+NEO4J_USER = ""
+NEO4J_PASSWORD = ""
+QDRANT_COLLECTION = ""
+OPENAI_KEY = ""  # Add your OpenAI API key here
 
 openai.api_key = OPENAI_KEY
 neo4j_driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
