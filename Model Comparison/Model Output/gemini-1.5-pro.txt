@@ -1,0 +1,38 @@
+Query 1: queries = [
+
+    "Number of Patients by Race and Ethnicity"
+Cypher Query:
+```cypher
+MATCH (p:Patient)
+RETURN p.RACE, p.ETHNICITY, count(p)
+```
+
+================================================================================
+Query 2: "Average Duration of Medication Usage"
+Cypher Query:
+```cypher
+MATCH (m:Medication)
+WHERE m.start IS NOT NULL AND m.stop IS NOT NULL
+WITH duration.between(date(m.start), date(m.stop)) AS duration
+RETURN avg(duration.days) AS average_duration
+```
+
+================================================================================
+Query 3: "Average Observation Value by Code"
+Cypher Query:
+```cypher
+MATCH (o:Observation)
+RETURN o.CODE, avg(toFloat(o.VALUE)) AS average_value
+```
+
+================================================================================
+Query 4: "Number of Procedures by Description"
+]
+Cypher Query:
+```cypher
+MATCH (p:Procedure)
+RETURN p.DESCRIPTION AS ProcedureDescription, count(p) AS Count
+ORDER BY Count DESC
+```
+
+================================================================================

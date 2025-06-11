@@ -1,0 +1,94 @@
+Query 1: queries = [
+    "Find All Conditions for a Specific Patient with ID: 0fe22cec-1a19-99da-b67f-7ce364c4cf3e"
+Cypher Query:
+```cypher
+MATCH (c:Condition {PATIENT: "0fe22cec-1a19-99da-b67f-7ce364c4cf3e"}) RETURN c
+```
+
+================================================================================
+Query 2: "List All Medications with Reason for Use for a patient with ID: b1f7b5a9-5cf5-6050-b23c-81027f53bdfd"
+Cypher Query:
+```cypher
+MATCH (m:Medication)-[:HAS_MEDICATION]->(p:Patient {PATIENT: "b1f7b5a9-5cf5-6050-b23c-81027f53bdfd"})
+RETURN m.DESCRIPTION, m.REASONDESCRIPTION
+```
+
+================================================================================
+Query 3: "Find All Observations for a Patient with ID: 95559bb7-a9a3-104c-a710-e9a1e22b312e"
+Cypher Query:
+```cypher
+MATCH (o:Observation)
+WHERE o.PATIENT = "95559bb7-a9a3-104c-a710-e9a1e22b312e"
+RETURN o
+```
+
+================================================================================
+Query 4: "Get All Procedures Performed During an Encounter for ID: 8a73988e-f47c-b5de-58df-7556d46266b2"
+Cypher Query:
+```cypher
+MATCH (p:Procedure)
+WHERE p.ENCOUNTER = "8a73988e-f47c-b5de-58df-7556d46266b2"
+RETURN p
+```
+
+================================================================================
+Query 5: # Added dummy ID
+    "Find Immunizations Given During a Specific Encounter whose ID is: e0bb5d2b-65bb-b1ed-8003-3096566068aa"
+Cypher Query:
+```cypher
+MATCH (i:Immunization)
+WHERE i.ENCOUNTER = "e0bb5d2b-65bb-b1ed-8003-3096566068aa"
+RETURN i
+```
+
+================================================================================
+Query 6: "Find Immunizations Given During a Specific Encounter with ID: e0bb5d2b-65bb-b1ed-8003-3096566068aa"
+Cypher Query:
+```cypher
+MATCH (i:Immunization)
+WHERE i.ENCOUNTER = "e0bb5d2b-65bb-b1ed-8003-3096566068aa"
+RETURN i
+```
+
+================================================================================
+Query 7: "Number of Immunizations by Vaccine Type"
+Cypher Query:
+```cypher
+MATCH (i:Immunization) RETURN i.DESCRIPTION, count(*) AS ImmunizationCount
+```
+
+================================================================================
+Query 8: "Number of Patients by Race and Ethnicity"
+Cypher Query:
+```cypher
+MATCH (p:Patient)
+RETURN p.RACE, p.ETHNICITY, count(*) AS count
+```
+
+================================================================================
+Query 9: "Average Duration of Medication Usage"
+Cypher Query:
+```cypher
+MATCH (m:Medication)
+WHERE m.STOP IS NOT NULL AND m.START IS NOT NULL
+WITH m, date(m.STOP) - date(m.START) AS duration
+RETURN avg(duration.days) AS average_duration
+```
+
+================================================================================
+Query 10: "Average Observation Value by Code"
+Cypher Query:
+```cypher
+MATCH (o:Observation)
+RETURN o.CODE, AVG(toFloat(o.VALUE)) AS AverageValue
+```
+
+================================================================================
+Query 11: "Number of Procedures by Description"
+]
+Cypher Query:
+```cypher
+MATCH (p:Procedure) RETURN p.DESCRIPTION, count(*) AS Count ORDER BY Count DESC
+```
+
+================================================================================

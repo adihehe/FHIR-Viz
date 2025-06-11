@@ -1,0 +1,67 @@
+Query 1: Find All Conditions for a Specific Patient with ID: "0fe22cec-1a19-99da-b67f-7ce364c4cf3e"
+Cypher Query:
+MATCH (p:Patient {Id: 'PATIENT_ID'})-[:HAS_CONDITION]->(c:Condition)
+RETURN c.CODE AS ConditionCode, c.DESCRIPTION AS ConditionDescription, c.START AS StartDate, c.STOP AS StopDate
+ORDER BY c.START
+================================================================================
+Query 2: List All Medications with Reason for Use for a Patient with ID: "b1f7b5a9-5cf5-6050-b23c-81027f53bdfd"
+Cypher Query:
+MATCH (p:Patient {Id: 'PATIENT_ID'})-[:HAS_MEDICATION]->(m:Medication)
+RETURN m.CODE AS MedicationCode, m.DESCRIPTION AS MedicationDescription, m.REASONDESCRIPTION AS Reason, m.START AS StartDate, m.STOP AS StopDate
+ORDER BY m.START
+================================================================================
+Query 3: Find Immunizations Given During a Specific Encounter
+Cypher Query:
+MATCH (i:Immunization)-[:PART_OF_ENCOUNTER]->(e:Encounter {Id: 'ENCOUNTER_ID'})
+RETURN i.CODE AS VaccineCode, i.DESCRIPTION AS VaccineName, i.DATE AS ImmunizationDate
+================================================================================
+Query 4: Find All Observations for a Patient with ID: "95559bb7-a9a3-104c-a710-e9a1e22b312e"
+Cypher Query:
+MATCH (p:Patient {Id: 'PATIENT_ID'})-[:HAS_OBSERVATION]->(o:Observation)
+RETURN o.CODE AS ObservationCode, o.DESCRIPTION AS Observation, o.VALUE AS Value, o.UNITS AS Units, o.DATE AS ObservationDate
+ORDER BY o.DATE
+================================================================================
+Query 5: Get All Procedures Performed During an Encounter
+Cypher Query:
+MATCH (proc:Procedure)-[:PART_OF_ENCOUNTER]->(e:Encounter {Id: 'ENCOUNTER_ID'})
+RETURN proc.CODE AS ProcedureCode, proc.DESCRIPTION AS ProcedureName, proc.START AS StartDate, proc.STOP AS EndDate
+================================================================================
+Query 6: Top 10 Most Common Conditions
+Cypher Query:
+MATCH (:Patient)-[:HAS_CONDITION]->(c:Condition)
+RETURN c.DESCRIPTION AS Condition, COUNT(*) AS Occurrences
+ORDER BY Occurrences DESC
+LIMIT 10
+================================================================================
+Query 7: Number of Immunizations by Vaccine Type
+Cypher Query:
+MATCH (i:Immunization)
+RETURN i.DESCRIPTION AS Vaccine, COUNT(*) AS Count
+ORDER BY Count DESC
+================================================================================
+Query 8: Number of Patients by Race and Ethnicity
+Cypher Query:
+MATCH (p:Patient)
+RETURN p.RACE AS Race, p.ETHNICITY AS Ethnicity, COUNT(*) AS PatientCount
+ORDER BY PatientCount DESC
+================================================================================
+Query 9: Average Duration of Medication Usage
+Cypher Query:
+MATCH (m:Medication)
+WHERE m.START IS NOT NULL AND m.STOP IS NOT NULL
+WITH duration.between(datetime(m.START), datetime(m.STOP)) AS d
+RETURN avg(d.days) AS AvgMedicationDurationInDays
+================================================================================
+Query 10: Average Observation Value by Code
+Cypher Query:
+MATCH (o:Observation)
+WHERE o.VALUE IS NOT NULL
+RETURN o.CODE AS ObservationCode, avg(toFloat(o.VALUE)) AS AvgValue, o.UNITS AS Units
+ORDER BY AvgValue DESC
+================================================================================
+Query 11: Number of Procedures by Description
+Cypher Query:
+MATCH (p:Procedure)
+RETURN p.DESCRIPTION AS ProcedureName, COUNT(*) AS Frequency
+ORDER BY Frequency DESC
+================================================================================
