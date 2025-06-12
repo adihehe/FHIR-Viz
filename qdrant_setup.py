@@ -34,8 +34,7 @@ from qdrant_client.models import PointStruct
 from vertexai.preview.language_models import TextEmbeddingModel
 model = TextEmbeddingModel.from_pretrained("gemini-embedding-001")
 
-PORT = ""
-qdrant = QdrantClient("http://localhost", port=PORT)
+qdrant = QdrantClient("http://localhost", port=7000)
 COLLECTION_NAME = "schema"
 
 
